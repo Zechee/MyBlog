@@ -46,22 +46,22 @@ export const useApp = defineStore("app", () => {
     const { data } = await AppApi.info();
     const covers = data!.covers!;
     app.info = data!.info ?? {
-      nikeName: "可乐不加冰",
+      nikeName: "Zechee",
       motto: "凡是过往，皆为序章",
-      qq: "823302316",
+      qq: "908753826",
       avatar: "/default.jpg",
     };
     app.blogSetting = data!.site ?? {
-      siteName: "可乐不加冰",
+      siteName: "Zechee",
       motto: "凡是过往，皆为序章",
       isAllowComments: true,
       isAllowMessage: true,
       runTime: new Date("2023/06/01"),
-      copyright: "©2023 By 可乐不加冰",
-      description: "可乐不加冰的博客",
-      filing: "鄂ICP备2020020251号-2",
+      copyright: "©2023 By Zechee",
+      description: "Zechee的博客",
+      filing: "鄂ICP备202202225417号",
       favicon: "favicon.ico",
-      keyword: "可乐不加冰的博客",
+      keyword: "Zechee的博客",
       visitorNumbers: 0,
     };
     app.covers.home = covers.home ?? ["/cover/default.jpg"];
